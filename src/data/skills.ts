@@ -13,9 +13,12 @@ export const skills: Skill[] = [
     name: 'Tailwind CSS',
     category: 'frontend',
   },
-
   {
     name: 'NestJS',
+    category: 'backend',
+  },
+  {
+    name: 'Next.js',
     category: 'backend',
   },
   {
