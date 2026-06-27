@@ -5,7 +5,6 @@ const groupedSkills = {
   frontend: skills.filter((skill) => skill.category === "frontend"),
   backend: skills.filter((skill) => skill.category === "backend"),
   database: skills.filter((skill) => skill.category === "database"),
-  tools: skills.filter((skill) => skill.category === "tools"),
 };
 
 const Skills = () => {
