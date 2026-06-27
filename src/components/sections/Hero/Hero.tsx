@@ -1,6 +1,5 @@
 import HeroContent from "./HeroContent";
 import HeroActions from "./HeroActions";
-import HeroSocials from "./HeroSocials";
 
 const Hero = () => {
   return (
@@ -15,7 +14,6 @@ const Hero = () => {
         <div className="max-w-3xl">
           <HeroContent />
           <HeroActions />
-          <HeroSocials />
         </div>
       </div>
     </section>
