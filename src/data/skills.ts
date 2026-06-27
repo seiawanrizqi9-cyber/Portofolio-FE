@@ -27,9 +27,4 @@ export const skills: Skill[] = [
     name: 'MongoDB',
     category: 'database',
   },
-
-  {
-    name: 'Git',
-    category: 'tools',
-  },
 ];

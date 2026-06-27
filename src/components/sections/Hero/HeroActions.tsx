@@ -1,7 +1,7 @@
 const HeroActions = () => {
   return (
     <div className="mt-10 flex flex-wrap gap-4">
-      <button className="rounded-xl bg-primary px-6 py-3 font-medium text-primary-foreground transition hover:scale-105">
+      <button className="rounded-xl bg-primary px-6 py-3 font-medium text-background transition hover:scale-105">
         View Projects
       </button>
 
