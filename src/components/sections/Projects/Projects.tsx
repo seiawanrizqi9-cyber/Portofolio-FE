@@ -1,11 +1,12 @@
 import { projects } from "../../../data/projects";
 import ProjectCard from "./ProjectCard";
+import { FadeUp } from "../../ui/fade-up";
 
 const Projects = () => {
   return (
     <section id="projects" className="py-[var(--section-gap)]">
       <div className="container mx-auto px-6">
-        <div className="mb-16 text-center">
+        <FadeUp className="mb-16 text-center">
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Projects
           </span>
@@ -16,18 +17,21 @@ const Projects = () => {
             A selection of projects that showcase my approach to building modern
             applications and solving real-world problems.
           </p>
-        </div>
+        </FadeUp>
 
         <div className="grid gap-8 lg:grid-cols-2">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <FadeUp key={project.id} delay={index * 0.1}>
+              <ProjectCard project={project} />
+            </FadeUp>
           ))}
         </div>
 
-        <p className=" text-muted-foreground">
-          Want to see other projects? Check out my <a href="#" className="text-primary">GitHub page</a>.
-        </p>
-        
+        <FadeUp delay={0.3} className="mt-12 text-center">
+          <p className="text-muted-foreground">
+            Want to see other projects? Check out my <a href="#" className="text-primary hover:underline transition">GitHub page</a>.
+          </p>
+        </FadeUp>
       </div>
     </section>
   );
