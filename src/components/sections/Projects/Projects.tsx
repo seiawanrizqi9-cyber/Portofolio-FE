@@ -23,6 +23,11 @@ const Projects = () => {
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
+
+        <p className=" text-muted-foreground">
+          Want to see other projects? Check out my <a href="#" className="text-primary">GitHub page</a>.
+        </p>
+        
       </div>
     </section>
   );
