@@ -1,5 +1,6 @@
 import { FadeUp } from "../components/ui/fade-up";
 import RippleButton from "../components/ui/ripple-button";
+import { TiltCard } from "../components/ui/tilt-card";
 import profileImg from "../assets/myself.jpeg";
 
 export default function About() {
@@ -76,96 +77,93 @@ export default function About() {
           </FadeUp>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <FadeUp
-              delay={0.2}
-              className="group rounded-3xl border border-border bg-surface-low/30 p-8 backdrop-blur-sm transition-colors hover:bg-surface-low/50"
-            >
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4">
-                Systems
-                <br />
-                Architecture
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">
-                Building robust, scalable foundations for complex web
-                applications using modern cloud infrastructures and
-                microservices.
-              </p>
+            <FadeUp delay={0.2}>
+              <TiltCard className="group h-full rounded-3xl border border-border bg-surface-low/30 p-8 backdrop-blur-sm transition-colors hover:bg-surface-low/50">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Systems
+                  <br />
+                  Architecture
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  Building robust, scalable foundations for complex web
+                  applications using modern cloud infrastructures and
+                  microservices.
+                </p>
+              </TiltCard>
             </FadeUp>
 
-            <FadeUp
-              delay={0.3}
-              className="group rounded-3xl border border-border bg-surface-low/30 p-8 backdrop-blur-sm transition-colors hover:bg-surface-low/50"
-            >
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  <path d="M2 12h20"></path>
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4">
-                Interface
-                <br />
-                Design
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">
-                Creating pixel-perfect, accessible, and emotionally engaging
-                user interfaces with a focus on motion and glassmorphism.
-              </p>
+            <FadeUp delay={0.3}>
+              <TiltCard className="group h-full rounded-3xl border border-border bg-surface-low/30 p-8 backdrop-blur-sm transition-colors hover:bg-surface-low/50">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Interface
+                  <br />
+                  Design
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  Creating pixel-perfect, accessible, and emotionally engaging
+                  user interfaces with a focus on motion and glassmorphism.
+                </p>
+              </TiltCard>
             </FadeUp>
 
-            <FadeUp
-              delay={0.4}
-              className="group rounded-3xl border border-border bg-surface-low/30 p-8 backdrop-blur-sm transition-colors hover:bg-surface-low/50"
-            >
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-tertiary/10 text-tertiary">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4">
-                Fullstack
-                <br />
-                Development
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">
-                Bridging the gap between design and logic with clean, performant
-                code in React, Node.js, and modern CSS frameworks.
-              </p>
+            <FadeUp delay={0.4}>
+              <TiltCard className="group h-full rounded-3xl border border-border bg-surface-low/30 p-8 backdrop-blur-sm transition-colors hover:bg-surface-low/50">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-tertiary/10 text-tertiary">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Fullstack
+                  <br />
+                  Development
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  Bridging the gap between design and logic with clean, performant
+                  code in React, Node.js, and modern CSS frameworks.
+                </p>
+              </TiltCard>
             </FadeUp>
           </div>
         </section>
