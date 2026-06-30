@@ -1,7 +1,7 @@
 import { LimelightNav } from "../ui/limelight-nav";
 
 const menus = [
-  { id: "home", label: "Home", path: "/" },
+  { id: "home", label: "Home", path: "/home" },
   { id: "skills", label: "Skills", path: "/skills" },
   { id: "about", label: "About", path: "/about" },
   { id: "projects", label: "Projects", path: "/projects" },

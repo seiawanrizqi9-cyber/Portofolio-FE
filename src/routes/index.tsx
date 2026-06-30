@@ -7,13 +7,18 @@ import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import Opening from "../pages/Opening";
 
 export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Opening />
+  },
   {
     element: <MainLayout />,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <Home />,
       },
       {
