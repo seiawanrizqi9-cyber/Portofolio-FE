@@ -138,17 +138,22 @@ export default function Opening() {
     <div className="fixed inset-0 flex items-center justify-center p-8 bg-zinc-950">
       <Terminal className="bg-zinc-950 text-zinc-100 border-zinc-800">
         {!submitted ? (
-          <div className="flex items-center text-sm font-normal tracking-tight">
-            <span className="mr-2 text-zinc-400">$</span>
-            <input
-              type="text"
-              autoFocus
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              onKeyDown={handleKeyDown}
-              className="bg-transparent outline-none flex-1 text-zinc-100 font-mono"
-              placeholder="npm install portofolio user"
-            />
+          <div className="flex flex-col gap-4">
+            <AnimatedSpan delay={100} className="text-zinc-400">
+              Please enter command: <span className="text-zinc-100 font-semibold">npm install portofolio user</span>
+            </AnimatedSpan>
+            <div className="flex items-center text-sm font-normal tracking-tight">
+              <span className="mr-2 text-zinc-400">$</span>
+              <input
+                type="text"
+                autoFocus
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={handleKeyDown}
+                className="bg-transparent outline-none flex-1 text-zinc-100 font-mono"
+                placeholder=""
+              />
+            </div>
           </div>
         ) : (
           <>
