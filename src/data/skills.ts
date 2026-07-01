@@ -1,33 +1,41 @@
-import type { Skill } from '../types/skill';
+import type { Skill } from "../types/skill";
 
 export const skills: Skill[] = [
   {
-    name: 'React',
-    category: 'frontend',
+    name: "React",
+    category: "frontend",
   },
   {
-    name: 'TypeScript',
-    category: 'frontend',
+    name: "TypeScript",
+    category: "frontend",
   },
   {
-    name: 'Tailwind CSS',
-    category: 'frontend',
+    name: "Tailwind CSS",
+    category: "frontend",
   },
   {
-    name: 'NestJS',
-    category: 'backend',
+    name: "NestJS",
+    category: "backend",
   },
   {
-    name: 'Next.js',
-    category: 'backend',
+    name: "Next.js",
+    category: "backend",
   },
   {
-    name: 'Express',
-    category: 'backend',
+    name: "Express",
+    category: "backend",
   },
 
   {
-    name: 'MongoDB',
-    category: 'database',
+    name: "MongoDB",
+    category: "database",
+  },
+  {
+    name: "PostgreSQL",
+    category: "database",
+  },
+  {
+    name: "Redis",
+    category: "database",
   },
 ];
