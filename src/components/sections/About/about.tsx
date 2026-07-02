@@ -26,25 +26,33 @@ const About = () => {
           <div className="space-y-6 text-muted-foreground leading-8">
             <FadeUp delay={0.3}>
               <p>
-                I'm a software developer who enjoys building modern web
-                applications with a strong focus on maintainability, scalability,
-                and user experience.
+                I'm a{" "}
+                <span className="text-primary font-medium">
+                  Software Developer
+                </span>{" "}
+                who enjoys building useful applications and websites. I focus on
+                creating things that are easy to maintain, scale well as they
+                grow, and most importantly, provide a great experience for the
+                people using them.
               </p>
             </FadeUp>
 
             <FadeUp delay={0.4}>
               <p>
-                My main interests are backend architecture, API development, and
-                creating beautiful frontend experiences that feel smooth and
-                intuitive.
+                My main interests are designing reliable databases, building
+                APIs, and creating system that are engaging, seamless, and
+                intuitive for everyone.
               </p>
             </FadeUp>
 
             <FadeUp delay={0.5}>
               <p>
-                Currently, I'm continuously improving my skills in fullstack
-                development while exploring software architecture, system design,
-                and cloud technologies.
+                Currently, I'm continuously improving my skills in{" "}
+                <span className="text-[#a78bfa] font-medium">
+                  software development
+                </span>{" "}
+                while learning how to build better and more secure systems for
+                everyday users.
               </p>
             </FadeUp>
           </div>

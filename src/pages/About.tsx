@@ -37,11 +37,25 @@ export default function About() {
 
             <FadeUp delay={0.3}>
               <p className="max-w-xl text-lg text-muted-foreground leading-relaxed">
-                I am a multidisciplinary designer and engineer focused on
-                building bridges between complex technology and human-centric
-                experiences. With over 3 years of experience, I blend technical
-                precision with artistic intuition to create products that don't
-                just work—they resonate.
+                Hello! I'm Muhammad Rizqi Setiawan, a passionate{" "}
+                <span className="text-primary font-medium">
+                  Software Developer
+                </span>{" "}
+                who loves building applications that make people's lives easier.
+                <br /><br />
+                My coding journey began in 2024, and I have since grown from
+                learning basic logic to mastering{" "}
+                <span className="text-[#4fd1c5] font-medium">
+                  how systems work
+                </span>{" "}
+                behind the scenes. <br /><br />
+                Today, my main focus is designing robust{" "}
+                <span className="text-[#a78bfa] font-medium">
+                  databases and systems
+                </span>{" "}
+                that power digital experiences flawlessly. I enjoy this field
+                because it challenges me to think critically and solve
+                real-world problems. Here are the core technologies I use:
               </p>
             </FadeUp>
 
@@ -149,19 +163,26 @@ export default function About() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
                     <line x1="8" y1="21" x2="16" y2="21"></line>
                     <line x1="12" y1="17" x2="12" y2="21"></line>
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">
-                  Fullstack
+                  Software
                   <br />
                   Development
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
-                  Bridging the gap between design and logic with clean, performant
-                  code in React, Node.js, and modern CSS frameworks.
+                  Writing clean and reliable code to build features that are
+                  easy to use and work flawlessly.
                 </p>
               </TiltCard>
             </FadeUp>
