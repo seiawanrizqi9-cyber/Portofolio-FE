@@ -22,7 +22,14 @@ const SkillCard = ({ skill }: SkillCardProps) => {
       "
     >
       <div className="flex items-center justify-between">
-        <h3 className="font-medium">{skill.name}</h3>
+        <div className="flex items-center gap-3">
+          {skill.icon && typeof skill.icon === 'string' ? (
+            <img src={skill.icon} alt={skill.name} className="w-5 h-5 object-contain" />
+          ) : skill.icon ? (
+            <skill.icon className="w-5 h-5" />
+          ) : null}
+          <h3 className="font-medium">{skill.name}</h3>
+        </div>
 
         <span
           className="
