@@ -2,6 +2,7 @@ import { FadeUp } from "../components/ui/fade-up";
 import { Mail, MapPin } from "lucide-react";
 import githubImg from "../assets/github.png";
 import linkedinImg from "../assets/linkedin.png";
+import instagramImg from "../assets/instagram.png";
 
 export default function Contact() {
   return (
@@ -58,7 +59,7 @@ export default function Contact() {
                         href="mailto:seiawanrizqi9@gmail.com"
                         className="text-lg font-medium hover:text-[#84a9e3] transition-colors"
                       >
-                        seiawanrizqi9@gmail.com
+                        seiawanrizqi.9@gmail.com
                       </a>
                     </div>
                   </div>
@@ -118,6 +119,24 @@ export default function Contact() {
                     </div>
                     <span className="font-medium text-muted-foreground group-hover:text-foreground transition-colors">
                       GitHub
+                    </span>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/st.one_09/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-4 group"
+                  >
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-background transition-colors group-hover:border-foreground">
+                      <img
+                        src={instagramImg}
+                        alt="Instagram"
+                        className="w-6 h-6 object-contain"
+                      />
+                    </div>
+                    <span className="font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                      Instagram
                     </span>
                   </a>
                 </div>
