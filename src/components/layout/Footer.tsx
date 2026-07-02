@@ -1,15 +1,15 @@
 const socials = [
   {
     label: "Github",
-    href: "#",
+    href: "https://github.com/seiawanrizqi9-cyber",
   },
   {
     label: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/muhammad-rizqi-setiawan/",
   },
   {
-    label: "Email",
-    href: "#",
+    label: "Instagram",
+    href: "https://www.instagram.com/st.one_09/",
   },
 ];
 
